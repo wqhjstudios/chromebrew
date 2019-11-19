@@ -3,21 +3,13 @@ require 'package'
 class Qtbase < Package
   description 'Qt Base (Core, Gui, Widgets, Network, ...)'
   homepage 'https://github.com/qt/qtbase'
-  version '5.12.3'
-  source_url 'http://download.qt.io/official_releases/qt/5.12/5.12.3/submodules/qtbase-everywhere-src-5.12.3.tar.xz'
-  source_sha256 'fddfd8852ef7503febeed67b876d1425160869ae2b1ae8e10b3fb0fedc5fe701'
+  version '5.13.2'
+  source_url 'https://download.qt.io/official_releases/qt/5.13/5.13.2/single/qt-everywhere-src-5.13.2.tar.xz'
+  source_sha256 '55e8273536be41f4f63064a79e552a22133848bb419400b6fa8e9fc0dc05de08'
 
   binary_url ({
-    aarch64: 'https://dl.bintray.com/chromebrew/chromebrew/qtbase-5.12.3-chromeos-armv7l.tar.xz',
-     armv7l: 'https://dl.bintray.com/chromebrew/chromebrew/qtbase-5.12.3-chromeos-armv7l.tar.xz',
-       i686: 'https://dl.bintray.com/chromebrew/chromebrew/qtbase-5.12.3-chromeos-i686.tar.xz',
-     x86_64: 'https://dl.bintray.com/chromebrew/chromebrew/qtbase-5.12.3-chromeos-x86_64.tar.xz',
   })
   binary_sha256 ({
-    aarch64: '1d03332f2eb04d0f74d35ac1120c5d8cc2fa28b13c12649ec1778dba6fde0f6d',
-     armv7l: '1d03332f2eb04d0f74d35ac1120c5d8cc2fa28b13c12649ec1778dba6fde0f6d',
-       i686: '60cfbe8822c86ca48c0fa847744b7d4aa8829e31fc18396b7a6cd9b6bd047b3a',
-     x86_64: '58a2294909587a37caf520df334bee992fa4fcc793985a90ff1eb18fa96e3ab9',
   })
 
   depends_on 'alsa_plugins'
