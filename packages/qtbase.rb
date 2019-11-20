@@ -24,7 +24,7 @@ class Qtbase < Package
   depends_on 'lcms'
   depends_on 'libevent'
   depends_on 'libinput'
-  depends_on 'libjpeg'
+  depends_on 'libmng'
   depends_on 'libvpx'
   depends_on 'protobuf'
 
